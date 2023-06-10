@@ -25,7 +25,7 @@
   --color-icons: #cab3ff;
   --color-light: #fff;
   --color-icon-input: #505059;
-  --switch-bg-url: url(./assets/sun.svg);
+  --switch-bg-url: url(../assets/sun.svg);
   --stroke-color: #00000080;
   --surface-color: #0000000d;
 
@@ -48,7 +48,7 @@
   --color-shadow-card: #202023;
   --color-icons: #7c3aed;
   --color-icon-input: #fff;
-  --switch-bg-url: url(./assets/moon.svg);
+  --switch-bg-url: url(../assets/moon.svg);
   --stroke-color: #ffffff80;
   --surface-color: #ffffff1a;
 
