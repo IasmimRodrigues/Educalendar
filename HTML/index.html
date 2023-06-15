@@ -13,41 +13,66 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="icon" href="../assets/IconLogo.svg">
   </head>
   <body>
     <div id="app">
       <nav>
-        <img src="../assets/logo.svg" alt="Logo do site" class="logo" />
+        <div class="logo">
+          <a href="index.html"><div class="logoImage"></div></a>
+        </div>
+        <!-- <img
+          src="../assets/logoBrancaLilasClaro.svg"
+          alt="Logo do site"
+          class="logo"
+        /> -->
 
         <ul>
           <li>
             <a href="#" class="active">
-              <ion-icon name="tablet-portrait"></ion-icon>
-              Boards
+              <!-- <ion-icon name="tablet-portrait"></ion-icon> -->
+              Home
             </a>
           </li>
 
           <li>
             <a href="#">
-              <ion-icon name="people"></ion-icon>
-              Equipes
+              <!-- <ion-icon name="people"></ion-icon> -->
+              Kanban
             </a>
           </li>
 
           <li>
             <a href="#">
-              <ion-icon name="document-text"></ion-icon>
-              Relatórios
+              <!-- <ion-icon name="document-text"></ion-icon> -->
+              Calendário
             </a>
           </li>
 
           <li>
             <a href="#">
-              <ion-icon name="cog"></ion-icon>
-              Ajustes
+              <!-- <ion-icon name="cog"></ion-icon> -->
+              Turma
             </a>
           </li>
         </ul>
+        <div class="buttonsAcess">
+          <div class="fontButton">
+            <button onclick="addFontSize(3)">
+              <!-- <ion-icon name="add-circle-outline"></ion-icon> Aumentar letra -->
+              <img src="../assets/upFont.svg" alt="">
+            </button>
+            <button onclick="dimFontSize(3)">
+              <!-- <ion-icon name="remove-circle-outline"></ion-icon> Diminuir letra -->
+              <img src="../assets/descreaseFont.svg" alt="">
+            </button>
+          </div>
+          <div class="switch">
+            <button onclick="toggleMode()"></button>
+            <!-- <span></span> -->
+          </div>
+        </div>
       </nav>
 
       <main>
@@ -58,7 +83,7 @@
               <img src="../assets/pencil.svg" alt="" />
             </h1>
             <div class="title-right">
-              <div class="fontButton">
+              <!-- <div class="fontButton">
                 <button onclick="addFontSize(3)">
                   <ion-icon name="add-circle-outline"></ion-icon> Aumentar letra
                 </button>
@@ -66,12 +91,11 @@
                   <ion-icon name="remove-circle-outline"></ion-icon> Diminuir
                   letra
                 </button>
-              </div>
+              </div> -->
 
-              <div class="switch">
+              <!-- <div class="switch">
                 <button onclick="toggleMode()"></button>
-                <!-- <span></span> -->
-              </div>
+              </div> -->
               <img src="https://github.com/IasmimRodrigues.png" alt="" />
             </div>
           </section>

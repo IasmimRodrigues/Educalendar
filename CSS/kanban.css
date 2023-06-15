@@ -28,10 +28,15 @@
   --switch-bg-url: url(../assets/sun.svg);
   --stroke-color: #00000080;
   --surface-color: #0000000d;
+  --color-links: #ffffff95;
 
   --background-highlights: #e2d6ff50;
   --background-over: #e2d6ff95;
   --background-filter-hover: #6d2cdd;
+  --background-switch: #5a1fc0;
+  --shadow-switch: rgba(90, 31, 192, 1);
+
+  --logo: url(../assets/logoBrancaLilasClaro.svg);
 }
 
 .dark-mode {
@@ -54,6 +59,11 @@
 
   --background-highlights: #20202450;
   --background-over: #20202495;
+  --background-switch: #7c3aed;
+  --shadow-switch: rgba(124, 58, 237, 0.6);
+
+
+  --logo: url(../assets/logo.svg);
 }
 
 body {
@@ -65,48 +75,53 @@ a {
   text-decoration: none;
 }
 
-#app {
+/* #app {
   display: grid;
   grid-template-columns: max-content 1fr;
 
   min-height: 100vh;
-}
+} */
 
 main .inner {
   height: 100%;
   background-color: var(--background-content);
-  border-top-left-radius: 32px;
+  /* border-top-left-radius: 32px; */
 
   padding: 4.8rem 3.2rem;
 }
 
-main {
-  padding-top: 0.8rem;
+nav {
+  padding: 2rem 5.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav {
-  padding: 3.2rem 2.7rem 0 3.5rem;
+nav .logo a .logoImage {
+  width: 150px;
+  height: 40px;
+  background: var(--logo) no-repeat center;
 }
 
 ul {
-  margin-top: 6rem;
-
   list-style: none;
 
-  display: grid;
+  display: flex;
   gap: 3.6rem;
-
-  min-width: 11.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 li a {
-  color: var(--color-icons);
+  color: var(--color-links);
 
   display: flex;
   align-items: center;
-  gap: 1.6rem;
+  gap: 2rem;
 
   font-weight: 500;
+  transition: 0.3s;
+  /* width: 7rem; */
 }
 
 a.active,
@@ -115,9 +130,39 @@ a:hover {
   font-weight: 700;
 }
 
-a ion-icon {
-  font-size: 2rem;
+.buttonsAcess {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
+
+.buttonsAcess .fontButton {
+  display: flex;
+  gap: 15px;
+}
+
+.buttonsAcess .fontButton button {
+  padding: 0.5rem;
+  border: 0;
+  background: #e2d6ff;
+  border-radius: 0.5rem;
+  color: #403937;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+  gap: 1rem;
+}
+
+.buttonsAcess .fontButton button:hover {
+  background: #dccbff;
+}
+
+.buttonsAcess .fontButton button img {
+  width: 20px;
+}
+
 
 /* Section Title + Avatar + Page mode */
 
@@ -136,42 +181,19 @@ section.title-avatar {
   gap: 70px;
 }
 
-.title-avatar .title-right .switch button {
+ .switch button {
   width: 32px;
   height: 32px;
-  background: #7c3aed var(--switch-bg-url) no-repeat center;
+  background: var(--background-switch) var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
-  box-shadow: 0rem 0.3rem 2rem rgba(124, 58, 237, 0.6);
+  box-shadow: 0rem 0.3rem 2rem var(--shadow-switch);
 
   cursor: pointer;
   transition: 0.5s;
 }
 
-.title-avatar .title-right .fontButton {
-  display: flex;
-  gap: 10px;
-}
-
-.title-avatar .title-right .fontButton button {
-  padding: 1rem 2rem;
-  border: 0;
-  background: #e2d6ff;
-  border-radius: 0.5rem;
-  color: #403937;
-
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.5s;
-  gap: 1rem;
-}
-
-.title-avatar .title-right .fontButton button:hover {
-  background: #dccbff;
-}
-
-.title-avatar .title-right .switch button:hover {
+.switch button:hover {
   box-shadow: none;
 }
 
@@ -499,3 +521,5 @@ section.kanban h2 {
 .dialog .inputs .adicionarCard:hover {
   background: var(--background-filter-hover);
 }
+
+
