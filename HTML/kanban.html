@@ -20,57 +20,37 @@
     <div id="app">
       <nav>
         <div class="logo">
-          <a href="kanban.html"><div class="logoImage"></div></a>
+          <a href="../HTML/index.html"><div class="logoImage"></div></a>
         </div>
-        <!-- <img
-          src="../assets/logoBrancaLilasClaro.svg"
-          alt="Logo do site"
-          class="logo"
-        /> -->
 
         <ul>
           <li>
-            <a href="index.html">
-              <!-- <ion-icon name="tablet-portrait"></ion-icon> -->
-              Home
-            </a>
+            <a href="../HTML/index.html"> Home </a>
           </li>
 
           <li>
-            <a href="kanban.html" class="active">
-              <!-- <ion-icon name="people"></ion-icon> -->
-              Kanban
-            </a>
+            <a href="../HTML/kanban.html" class="active"> Kanban </a>
           </li>
 
           <li>
-            <a href="#">
-              <!-- <ion-icon name="document-text"></ion-icon> -->
-              Calendário
-            </a>
+            <a href="../HTML/calendario.html"> Calendário </a>
           </li>
 
           <li>
-            <a href="#">
-              <!-- <ion-icon name="cog"></ion-icon> -->
-              Turma
-            </a>
+            <a href="../HTML/lista_alunos.html"> Turma </a>
           </li>
         </ul>
         <div class="buttonsAcess">
           <div class="fontButton">
             <button onclick="addFontSize(3)">
-              <!-- <ion-icon name="add-circle-outline"></ion-icon> Aumentar letra -->
               <img src="../assets/upFont.svg" alt="" />
             </button>
             <button onclick="dimFontSize(3)">
-              <!-- <ion-icon name="remove-circle-outline"></ion-icon> Diminuir letra -->
               <img src="../assets/descreaseFont.svg" alt="" />
             </button>
           </div>
           <div class="switch">
             <button onclick="toggleMode()"></button>
-            <!-- <span></span> -->
           </div>
         </div>
       </nav>
@@ -83,19 +63,6 @@
               <img src="../assets/pencil.svg" alt="" />
             </h1>
             <div class="title-right">
-              <!-- <div class="fontButton">
-                <button onclick="addFontSize(3)">
-                  <ion-icon name="add-circle-outline"></ion-icon> Aumentar letra
-                </button>
-                <button onclick="dimFontSize(3)">
-                  <ion-icon name="remove-circle-outline"></ion-icon> Diminuir
-                  letra
-                </button>
-              </div> -->
-
-              <!-- <div class="switch">
-                <button onclick="toggleMode()"></button>
-              </div> -->
               <img src="../assets/avatarPerfil.png" alt="" />
             </div>
           </section>
@@ -153,7 +120,10 @@
               <div class="cards">
                 <div class="card" draggable="true">
                   <h3>Fazer atividade de Banco de Ddaos</h3>
-                  <p>Criar 10 tabelas, com 5 registros em cada e enviar um beckup do banco de dados.</p>
+                  <p>
+                    Criar 10 tabelas, com 5 registros em cada e enviar um beckup
+                    do banco de dados.
+                  </p>
                   <div class="tags">
                     <span>banco de dados</span>
                     <span>atividade</span>
@@ -169,7 +139,8 @@
                 <div class="card" draggable="true">
                   <h3>Fazer desafio de programação</h3>
                   <p>
-                    Novo desafio do #boracodar da Rocketseat, desafio de back-end.
+                    Novo desafio do #boracodar da Rocketseat, desafio de
+                    back-end.
                   </p>
                   <div class="tags" id="tags">
                     <span>rocketsear</span>
@@ -203,7 +174,6 @@
 
         <div class="input">
           <label for="titulo">Descrição:</label>
-          <!-- <input type="text" onclick="inserirCard()"> -->
 
           <textarea name="descricao" id="descricao" required> </textarea>
         </div>
