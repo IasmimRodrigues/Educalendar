@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" class="light-mode">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/lista_aluno.css">
+    <title>Lista de alunos </title>
+</head>
+ <link rel="icon" href="../assets/IconLogo.svg">
+
+<body>
+    
+  
+
+        <div id="app">
+      <nav class="nav-bar">
+        <div class="logo">
+          <a href="index.html"><div class="logoImage"></div></a>
+        </div>
+        <!-- <img
+          src="../assets/logoBrancaLilasClaro.svg"
+          alt="Logo do site"
+          class="logo"
+        /> -->
+
+        <ul>
+          <li>
+            <a href="#" class="active">
+              <!-- <ion-icon name="tablet-portrait"></ion-icon> -->
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <!-- <ion-icon name="people"></ion-icon> -->
+              Kanban
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <!-- <ion-icon name="document-text"></ion-icon> -->
+              Calendário
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <!-- <ion-icon name="cog"></ion-icon> -->
+              Turma
+            </a>
+          </li>
+        </ul>
+          <div class="buttonsAcess">
+          <div class="fontButton">
+            <button onclick="addFontSize(3)">
+              <!-- <ion-icon name="add-circle-outline"></ion-icon> Aumentar letra -->
+              <img src="../assets/upFont.svg" alt="">
+            </button>
+            <button onclick="dimFontSize(3)">
+              <!-- <ion-icon name="remove-circle-outline"></ion-icon> Diminuir letra -->
+              <img src="../assets/descreaseFont.svg" alt="">
+            </button>
+          </div>
+          <div class="switch">
+            <button onclick="toggleMode()"></button>
+            <!-- <span></span> -->
+          </div>
+        </div>
+      </nav>
+           <header class="container">
+           
+                <nav class="flex items-center">
+        
+                    <h1> Alunos dessa turma </h1>
+        
+                    <!-- <ul class="flex items-center">
+        
+                        <li>
+                            <ion-icon name="add"></ion-icon>
+                        </li>
+                        <li>
+                            <ion-icon name="pencil"></ion-icon>
+                        </li>
+                        <li>
+                            <ion-icon name="trash"></ion-icon>
+                        </li>
+                    </ul> -->
+                </nav>
+                
+        <form>
+            <div class="input-wrapper">
+            <label class="sr-only" for="filter"> Busque por nome ou dados de aluno</label>
+        <ion-icon name="search-outline"></ion-icon>
+            <input id="filter" type="text" placeholder="Busque por nome ou por dados de contato...">
+        </div>
+        </form>
+
+    </header>
+
+    <section class="contacts container">
+        <div class="list-wrapper flex">
+            <div class="letter purple">I</div>
+            <ul>
+                <li>
+                    <div class="person flex">
+                        <img src="../assets/iasmim.png" alt="">
+                        <div class="contact">
+                            <h3>Iasmim</h3>
+                            <br>
+                            <p>iasmim@fatec.sp.gov.br</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+         <div class="list-wrapper flex">
+            <div class="letter green">L</div>
+            <ul>
+                <li>
+                    <div class="person flex">
+                        <img src="../assets/lucas.png" alt="">
+                        <div class="contact">
+                            <h3>Lucas</h3>
+                            <br>
+                            <p>lucas@fatec.sp.gov.br</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="list-wrapper flex">
+            <div class="letter pink">M</div>
+            <ul>
+                <li>
+                    <div class="person flex">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="">
+                        <div class="contact">
+                            <h3>Miguel</h3>
+                            <br>
+                            <p> mateus@fatec.sp.gov.br</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="person flex">
+                        <img src="../assets/murilo.jpg" alt="">
+                        <div class="contact">
+                            <h3>Murilo</h3>
+                            <br>
+                            <p>murilo@fatec.sp.gov.br</p>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+
+        </div>
+
+        
+
+            <div class="list-wrapper flex">
+                <div class="letter blue">T</div>
+                <ul>
+                    <li>
+                        <div class="person flex">
+                            <img src="../assets/tamiris.png" alt="">
+                            <div class="contact">
+                                <h3>Tamiris</h3>
+                                <br>
+                                <p>tamiris@fatec.sp.gov.br</p>
+                            </div>
+                        </div>
+                    </li>
+    
+                </ul>
+
+        </div>
+
+    </section>
+
+
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+
+  <script src="../JS/lista_alunos.js"></script>
+
+
+
+
+   
+    
+    
+    
+
+</body>
+
+</html>
