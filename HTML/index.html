@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="light-mode">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KanBan</title>
-    <link rel="stylesheet" href="../CSS/kanban.css" />
+    <title>Educalendar</title>
+
+    <link rel="stylesheet" href="../CSS/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,30 +14,30 @@
       rel="stylesheet"
     />
 
-    <link rel="icon" href="../assets/IconLogo.svg">
+    <link rel="icon" href="../assets/IconLogo.svg" />
   </head>
   <body>
-    <div id="app">
+    <div id="content">
       <nav>
         <div class="logo">
-          <a href="index.html"><div class="logoImage"></div></a>
+          <a href="kanban.html"><div class="logoImage"></div></a>
         </div>
         <!-- <img
-          src="../assets/logoBrancaLilasClaro.svg"
-          alt="Logo do site"
-          class="logo"
-        /> -->
+              src="../assets/logoBrancaLilasClaro.svg"
+              alt="Logo do site"
+              class="logo"
+            /> -->
 
         <ul>
           <li>
-            <a href="#" class="active">
+            <a href="index.html" class="active">
               <!-- <ion-icon name="tablet-portrait"></ion-icon> -->
               Home
             </a>
           </li>
 
           <li>
-            <a href="#">
+            <a href="kanban.html">
               <!-- <ion-icon name="people"></ion-icon> -->
               Kanban
             </a>
@@ -61,11 +61,11 @@
           <div class="fontButton">
             <button onclick="addFontSize(3)">
               <!-- <ion-icon name="add-circle-outline"></ion-icon> Aumentar letra -->
-              <img src="../assets/upFont.svg" alt="">
+              <img src="../assets/upFont.svg" alt="" />
             </button>
             <button onclick="dimFontSize(3)">
               <!-- <ion-icon name="remove-circle-outline"></ion-icon> Diminuir letra -->
-              <img src="../assets/descreaseFont.svg" alt="">
+              <img src="../assets/descreaseFont.svg" alt="" />
             </button>
           </div>
           <div class="switch">
@@ -75,155 +75,119 @@
         </div>
       </nav>
 
-      <main>
-        <div class="inner">
-          <section class="title-avatar">
-            <h1>
-              Meu KanBan
-              <img src="../assets/pencil.svg" alt="" />
-            </h1>
-            <div class="title-right">
-              <!-- <div class="fontButton">
-                <button onclick="addFontSize(3)">
-                  <ion-icon name="add-circle-outline"></ion-icon> Aumentar letra
-                </button>
-                <button onclick="dimFontSize(3)">
-                  <ion-icon name="remove-circle-outline"></ion-icon> Diminuir
-                  letra
-                </button>
-              </div> -->
-
-              <!-- <div class="switch">
-                <button onclick="toggleMode()"></button>
-              </div> -->
-              <img src="https://github.com/IasmimRodrigues.png" alt="" />
-            </div>
-          </section>
-
-          <section class="filter">
-            <button>
-              <ion-icon name="filter-outline"></ion-icon>
-              <span>Filtrar</span>
-            </button>
-            <div class="input-wrapper">
-              <ion-icon name="search-outline"></ion-icon>
-              <input
-                type="text"
-                placeholder="Busque por cards, assuntos ou responsáveis..."
-              />
-            </div>
-
-            <button id="buttonOpen">
-              <ion-icon name="add-outline"></ion-icon>
-              <span>Adicionar cartão</span>
-            </button>
-          </section>
-
-          <!-- section kanban -->
-
-          <section class="kanban">
-            <div class="todo">
-              <h2>A fazer</h2>
-              <div class="cards" id="todo">
-                <div class="card" draggable="true">
-                  <h3>trabalho de sistemas 👩‍💻</h3>
-                  <p>Fazer uma página de preenchimento de cartão de crédito</p>
-                  <div class="tags">
-                    <span>cartão</span>
-                    <span>página</span>
-                  </div>
-                </div>
-
-                <div class="card" draggable="true">
-                  <h3>tarefa de inglês 👩‍💻</h3>
-                  <p>Fazer página 10 do livro</p>
-                  <div class="tags">
-                    <span>livro</span>
-                    <span>curso</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="doing">
-              <h2>Fazendo</h2>
-
-              <div class="cards">
-                <div class="card" draggable="true">
-                  <h3>fazer atividade 👩‍💻</h3>
-                  <p>atividade de javascript</p>
-                  <div class="tags">
-                    <span>js</span>
-                    <span>javascript</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="done">
-              <h2>Feito</h2>
-
-              <div class="cards">
-                <div class="card" draggable="true">
-                  <h3>#boracodar 4 👩‍💻</h3>
-                  <p>
-                    Novo desafio do #boracodar da Rocketseat, onde é proposto
-                    construir um quadro de Kanban.
-                  </p>
-                  <div class="tags" id="tags">
-                    <span>rocketsear</span>
-                    <span>desafio</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+      <div id="landing-page">
+        <div class="content-landing">
+          <h2>Desperte o seu potencial acadêmico com Educalendar!</h2>
+          <p>
+            Descubra uma nova maneira de otimizar seus estudos, gerenciar suas
+            tarefas e conquistar o sucesso acadêmico com Educalendar. Nossa
+            plataforma inovadora reúne organização, produtividade e colaboração
+            em um só lugar, permitindo que você se concentre no que realmente
+            importa: o seu aprendizado.
+          </p>
+          <a class="saber-mais" href="#funcionalidades">Saber mais</a>
         </div>
-      </main>
+
+        <div class="image-landing">
+          <img src="../assets/image-landing.png" alt="" />
+        </div>
+      </div>
+
+      <div id="funcionalidades">
+        <div class="cards">
+          <div class="card">
+            <div class="icon">
+              <ion-icon name="podium-outline"></ion-icon>
+            </div>
+            <h2 class="title-card">To-do (Kanban):</h2>
+            <p class="description-card">
+              Organize suas tarefas acadêmicas de forma eficiente com nosso
+              recurso de To-do baseado no método Kanban. Crie listas
+              personalizadas, como "A fazer", "Em progresso" e "Concluído"
+            </p>
+            <a href="kanban.html">Acessar</a>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <ion-icon name="calendar-number-outline"></ion-icon>
+            </div>
+            <h2 class="title-card">Calendário:</h2>
+            <p class="description-card">
+              Agende e acompanhe seus trabalhos acadêmicos e compromissos
+              importantes com nosso recurso de calendário. Tenha uma visão clara
+              das datas de entrega, exames, apresentações e eventos acadêmicos.
+            </p>
+            <a href="#">Acessar</a>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <ion-icon name="person-circle-outline"></ion-icon>
+            </div>
+
+            <h2 class="title-card">Lista de Alunos:</h2>
+            <p class="description-card">
+              Mantenha registros atualizados dos colegas de classe, visualize
+              informações, como nomes, e-mails e números de telefone de contato.
+              Facilitando a comunicação entre os alunos.
+            </p>
+            <a href="#">Acessar</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="recursos">
+        <div class="image">
+          <img src="../assets/mockupKanban2.png" alt="">
+        </div>
+        <div class="content-recursos">
+          <h2>Recursos acessíveis</h2>
+          <p>
+            Reconhecemos a importância da acessibilidade para garantir que todos
+            os usuários possam desfrutar plenamente do Educalendar. Nossa
+            plataforma possui funcionalidades de acessibilidade incorporadas,
+            incluindo:
+          </p>
+
+          <div class="recursos">
+            <div class="recurso">
+              <div class="icon-recurso">
+                <ion-icon name="accessibility-outline"></ion-icon>
+              </div>
+              <div class="description-rec">
+                <h3>Aumentar/Diminuir Fonte:</h3>
+                <p>
+                  Ajuste o tamanho da fonte de acordo com suas preferências
+                  visuais e necessidades individuais. Escolha a opção que mais
+                  lhe conforta e torne sua experiência de leitura mais
+                  agradável.
+                </p>
+              </div>
+            </div>
+
+            <div class="recurso">
+              <div class="icon-recurso">
+                <ion-icon name="contrast-outline"></ion-icon>
+              </div>
+              <div class="description-rec">
+                <h3>Modo Claro e Escuro:</h3>
+                <p>
+                  Escolha entre o modo claro e escuro para personalizar a
+                  aparência do Educalendar. O modo escuro pode reduzir o cansaço
+                  visual em ambientes de pouca luz, enquanto o modo claro
+                  proporciona uma experiência mais vibrante.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <h2>Todos os direitos reservados - 2023 - Educalendar</h2>
+      </footer>
     </div>
-
-    <!-- modal  -->
-
-    <dialog class="dialog">
-      <div class="close-modal">
-        <button id="buttonClose" class="buttonClose">
-          <ion-icon name="close-outline"></ion-icon>
-        </button>
-      </div>
-
-      <h2>Adicionar cartão:</h2>
-
-      <div class="inputs">
-        <div class="input">
-          <label for="titulo">Título:</label>
-          <input type="text" id="titulo" />
-        </div>
-
-        <div class="input">
-          <label for="titulo">Descrição:</label>
-          <!-- <input type="text" onclick="inserirCard()"> -->
-
-          <textarea name="descricao" id="descricao" required> </textarea>
-        </div>
-
-        <div class="input" id="insertTag">
-          <label for="tag" class="tag"
-            >Tags:
-            <button onclick="inserirTag()" class="inerirTag">
-              <ion-icon name="add-outline"></ion-icon></button
-          ></label>
-          <input type="text" id="tag" />
-        </div>
-
-        <button
-          id="adicionarCard"
-          class="adicionarCard"
-          onclick="inserirCard()"
-        >
-          Adicionar
-        </button>
-      </div>
-    </dialog>
 
     <script
       type="module"
