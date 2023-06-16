@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+:root {
+    --base-font-size: 26rem;
+    --font-size: 100%;
+    font-size: var(--font-size);
+    font-family: "Inter", sans-serif;
+     --background-content: #fbfaff;
+     --background-nav: #7c3aed;
+     --background-active: #7c3aed;
+
+  
+    --background-page: #fff;
+    --color-light: #fff;
+    --color-icon:  #caaef9;
+    --text-input: #fff;
+    --color-links: #ffffff95;
+   
+    --background-input: #7c3aed;
+    --border-input: #caaef9;
+    --color-font: #403937;
+    
+    --switch-bg-url: url(../assets/sun.svg);
+    
+    --background-header: #caaef9;
+    --logo: url(../assets/logoBrancaLilasClaro.svg);
+    --background-switch: #5a1fc0;
+  --shadow-switch: rgba(90, 31, 192, 1);
+    
+  
+
+  
+ 
+
+ 
+}
+   
+  
+  
+  .dark-mode {
+    --background-page: #323238;
+    --color-light:#47474a;
+    --text-input: #47474a;
+    --color-icon: #7c3aed;
+    --background-input: #323238;
+    --border-input: #47474a;
+    --color-font: #fff;
+    --color-title: #fff;
+     --background-nav: #202024;
+     --color-light: #fff;
+     --background-content: #202024;
+    
+   
+    
+    --background-header: #47474a;
+
+   
+    --switch-bg-url: url(../assets/moon.svg);
+     --background-switch: #5a1fc0;
+  --shadow-switch: rgba(90, 31, 192, 1);
+   
+  }
+
+html,
+body {
+  font-family: "Lato";
+}
+
+body {
+  
+  background-color: var(--background-input);
+ 
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; 
+  
+ 
+}
+
+  header{
+    background-color: var(--color-icon);
+    color: var(--color-light);
+  }
+
+ul{
+    list-style: none;
+    color: var(--color-icon);
+}
+   
+h3{
+    color: var(--color-font);
+    font-size: 1.4rem;
+}
+h1{
+    color: var(--color-title);
+
+}
+
+a {
+  text-decoration: none;
+}
+.nav-bar {
+  padding: 2rem 5.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-nav);
+}
+
+nav .logo a .logoImage {
+  width: 150px;
+  height: 40px;
+  background: var(--logo) no-repeat center;
+}
+
+ul {
+  list-style: none;
+
+  display: flex;
+  gap: 3.6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+li a {
+  color: var(--color-links);
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  font-weight: 500;
+  transition: 0.3s;
+  /* width: 7rem; */
+}
+
+a.active,
+a:hover {
+  color: var(--color-light);
+  font-weight: 700;
+}
+
+.buttonsAcess {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.buttonsAcess .fontButton {
+  display: flex;
+  gap: 15px;
+}
+
+.buttonsAcess .fontButton button {
+  padding: 0.5rem;
+  border: 0;
+  background: #e2d6ff;
+  border-radius: 0.5rem;
+  color: #403937;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+  gap: 1rem;
+}
+
+.buttonsAcess .fontButton button:hover {
+  background: #dccbff;
+}
+
+.buttonsAcess .fontButton button img {
+  width: 20px;
+}
+.switch button {
+  width: 32px;
+  height: 32px;
+  background: var(--background-switch) var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0rem 0.3rem 2rem var(--shadow-switch);
+
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.switch button:hover {
+  box-shadow: none;
+}
+
+
+.box {
+  padding: 32px;
+  background-color: var(--background-content);
+  box-shadow: 0px 8px 32px rgba(0 0 0 / 0.16);
+  border-radius: 16px;
+  width: fit-content;
+   width: 500px;
+    height: 500px;
+      
+}
+
+#app {
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  gap: 24px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  color:var(--color-font);
+}
+
+header i {
+  padding: 16px;
+  border-radius: 999px;
+  color: var(--background-input);
+  cursor: pointer;
+}
+
+header i:hover {
+  background-color: var(--background-content);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-left: 20px;
+}
+
+main > div {
+  width: 82px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-font);
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+main > div:hover {
+  background-color: var(--background-header);
+  border-radius: 8px;
+}
+
+main > div.active {
+  background: var(--background-active);
+  border-radius: 8px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+}
+
+main > div.active::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: var(--background-input);
+  border-radius: 999px;
+  position: absolute;
+  bottom: 6px;
+}

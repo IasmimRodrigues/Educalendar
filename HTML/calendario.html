@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../CSS/calendario.css" />
+
+     <link rel="icon" href="../assets/IconLogo.svg">
+   
+     <title>Calendário</title>
+  </head>
+  <body>
+
+      <div id="appy">
+      <nav class="nav-bar">
+        <div class="logo">
+          <a href="index.html"><div class="logoImage"></div></a>
+        </div>
+        <!-- <img
+          src="../assets/logoBrancaLilasClaro.svg"
+          alt="Logo do site"
+          class="logo"
+        /> -->
+
+        <ul>
+          <li>
+            <a href="#" class="active">
+              <!-- <ion-icon name="tablet-portrait"></ion-icon> -->
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <!-- <ion-icon name="people"></ion-icon> -->
+              Kanban
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <!-- <ion-icon name="document-text"></ion-icon> -->
+              Calendário
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <!-- <ion-icon name="cog"></ion-icon> -->
+              Turma
+            </a>
+          </li>
+        </ul>
+          <div class="buttonsAcess">
+          <div class="fontButton">
+            <button onclick="addFontSize(3)">
+              <!-- <ion-icon name="add-circle-outline"></ion-icon> Aumentar letra -->
+              <img src="../assets/upFont.svg" alt="">
+            </button>
+            <button onclick="dimFontSize(3)">
+              <!-- <ion-icon name="remove-circle-outline"></ion-icon> Diminuir letra -->
+              <img src="../assets/descreaseFont.svg" alt="">
+            </button>
+          </div>
+          <div class="switch">
+            <button onclick="toggleMode()"></button>
+            <!-- <span></span> -->
+          </div>
+        </div>
+      </nav>
+
+      <section class="body">
+    <div id="app" class="box">
+      <header>
+        <i class="ph-bold ph-caret-left"></i>
+        <span></span>
+        <i class="ph-bold ph-caret-right"></i>
+      </header>
+      <main></main>
+    </div>
+
+  </section>
+    <script src="../JS/calendario.js"></script>
+  </body>
+</html>
